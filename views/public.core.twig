@@ -1,13 +1,28 @@
 <html>
 	<head>
+		<link href="{{ root }}css/core/block-plugin-twitter-bootstrap/bootstrap.css" rel="stylesheet" type="text/css" />
+		<link href="{{ root }}css/core/block-plugin-twitter-bootstrap/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+		<link href="{{ root }}css/core/block-plugin-twitter-bootstrap/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
 		<link href="{{ root }}css/core/block-host/style.css" rel="stylesheet" type="text/css" />
-		<link href="{{ root }}css/core/block-plugin-twitter-bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<link href="{{ root }}css/core/block-plugin-twitter-bootstrap/bootstrap-responsive-min.css" rel="stylesheet" type="text/css" />
+		<link href="{{ root }}css/core/block-module-sites/public.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
-		<h1>Public Site</h1>
-		{% block body %}
-			<p>Extend me.</p>
-		{% endblock %}
+		<div class='container'>
+			<div class='row'>
+				<div class='col-xs-6'>
+					<h1>Public Website</h1>
+				</div>
+				<div class='col-xs-6'>
+					<div class='menu-container'>
+						{% block menu %}{% endblock %}
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col-md-12'>
+					{% block body %}{% endblock %}
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,16 @@
+body
+{
+	background-color: #DDDDDD;
+	/*background-color: #6DA36E;*/
+}
+
+.menu-container
+{
+	float: right;
+	padding: 14px;
+}
+
+.clear
+{
+	clear: both;
+}
